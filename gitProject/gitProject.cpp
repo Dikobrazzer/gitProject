@@ -1,11 +1,51 @@
-﻿// gitProject.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// kalkulator.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    char c;
+    float result;
+    char Plus = '+';
+    char Minus = '-';
+    char division = '/';
+    char multiplication = '*';
+    float a, b;
+    std::cout << "Это простой калькулятор для двух чисел\n";
+    std::cout << "Введите действие: ";
+    std::cin >> a >> c >> b;
+    std::cout << "\n";
+    if (c == Plus)
+    {
+        result = a + b;
+        std::cout << "Результат: " << result << " \n";
+    }
+    else
+    {
+        if (c == Minus)
+        {
+            result = a - b;
+            std::cout << "Результат: " << result << " \n";
+        }
+        else
+        {
+            if (c == division)
+            {
+                result = a / b;
+                std::cout << "Результат: " << result << " \n";
+            }
+            else
+            {
+                result = a * b;
+                std::cout << "Результат: " << result << " \n";
+
+            }
+        }
+
+    }
+
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
